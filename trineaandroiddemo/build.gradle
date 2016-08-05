@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "cn.trinea.android.demo"
+        minSdkVersion 9
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard.cfg'
+        }
+    }
+}
+
+dependencies {
+    compile project(':androidautoscrollviewpager')
+    compile project(':trineaandroidcommon')
+    compile project(':library')
+    compile files('libs/GoogleAdMobAdsSdk-6.4.1.jar')
+    compile files('libs/libGoogleAnalyticsServices.jar')
+}

@@ -1,0 +1,4 @@
+include ':androidautoscrollviewpager'
+include ':library'
+include ':trineaandroidcommon'
+include ':trineaandroiddemo'
